@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Conecta 4</h1>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    </style>
+</head>
+
+<body>
+  <main class="game-show">
+        <button class="play-game">▶ Play</button>
+        <button class="end-game hidden">☠︎ End Game</button>
+        <button class="play-again hidden">↺ Play Again</button>
+        <p class="winner-text"></p>
+
+        <div class="board-composition"></div>
+
+        <div class="player-display">
+            <div class="player-color">
+                <p class="circle-turn not-pressed"></p>
+            </div>
+        </div>
+        <div class="whos-playing">
+            <p class="player-playing"></p>
+        </div>
+        <div class="timer-turn">
+            <p class="text-turn">Turn timer:</p>
+            <p class="seconds"></p>
+        </div>
+        <div class="timer-game">
+            <p class="game-time">Game time:</p>
+            <p class="timer"></p>
+        </div>
+    </main>
+    <script src="conecta4.js"></script>
+</body>
+
+</html>

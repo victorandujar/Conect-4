@@ -1,0 +1,400 @@
+html {
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    position: absolute;
+    left: 30px;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(160deg, white, #36a4ff, #0004f7dc, black);
+}
+
+.game-show {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(244, 204, 1);
+}
+
+.play-game {
+    position: absolute;
+    left: 1090px;
+    top: 320px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(44, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    background: gray;
+    color: white;
+}
+
+.end-game {
+    position: absolute;
+    left: 1070px;
+    top: 360px;
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(44, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    background: rgb(126, 19, 19);
+    color: white;
+}
+
+.play-again {
+    position: absolute;
+    left: 1070px;
+    top: 400px;
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgb(44, 44, 44);
+    font-family: 'Orbitron', sans-serif;
+    background: rgb(172, 140, 1);
+    color: white;
+}
+
+.winner-text {
+    position: absolute;
+    left: 1085px;
+    top: 680px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+.board-composition {
+    position: absolute;
+    background: rgb(251, 251, 252);
+    border: 7px solid rgb(196, 194, 194);
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 630px;
+    height: 540px;
+    box-shadow: 30px 15px 45px rgb(0, 0, 0);
+    top: 150px;
+    left: 300px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset 5px 4px 5px rgb(16, 16, 16);
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.circle-turn {
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: inset 7px 5px rgb(7, 7, 7);
+}
+
+.player-display {
+    position: absolute;
+    display: flex;
+    top: 500px;
+    left: 1100px;
+}
+
+.player-color {
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 10px 10px 15px rgb(44, 44, 44);
+}
+
+.whos-playing {
+    position: absolute;
+    display: flex;
+    left: 1050px;
+    top: 595px;
+
+}
+
+.player-playing {
+    width: 130px;
+    height: 30px;
+    border: 2px solid black;
+    margin: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 10px 10px 15px rgb(44, 44, 44);
+    text-align: center;
+    padding-top: 5px;
+}
+
+.timer-turn {
+    position: absolute;
+    left: 1060px;
+    top: 215px;
+}
+
+.text-turn {
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+.seconds {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: rgb(101, 253, 0);
+    top: -10px;
+    left: 110px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-game {
+    position: absolute;
+    left: 1060px;
+    top: 150px
+}
+
+.game-time {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+.timer {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 85px;
+    height: 20px;
+    bottom: 1px;
+    left: 160px;
+    text-align: center;
+    color: rgb(252, 185, 3);
+}
+
+.not-pressed {
+    background: navy;
+}
+
+.player1 {
+    background-color: rgb(191, 0, 0);
+}
+
+.player2 {
+    background-color: rgb(248, 211, 0);
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    html {
+        font-size: 80%;
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(160deg, white, #36a4ff, #0004f7dc, black);
+    }
+
+    .play-game {
+        position: absolute;
+        left: 770px;
+        top: 200px;
+        width: 80px;
+        height: 25px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 15px rgb(44, 44, 44);
+        font-size: 12px;
+        font-family: 'Orbitron', sans-serif;
+        background: gray;
+        color: white;
+    }
+
+    .end-game {
+        position: absolute;
+        left: 770px;
+        top: 235px;
+        width: 110px;
+        height: 25px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 15px rgb(44, 44, 44);
+        font-size: 12px;
+        font-family: 'Orbitron', sans-serif;
+        background: rgb(126, 19, 19);
+        color: white;
+    }
+
+    .play-again {
+        position: absolute;
+        left: 770px;
+        top: 270px;
+        width: 110px;
+        height: 25px;
+        border-radius: 5px;
+        box-shadow: 10px 10px 15px rgb(44, 44, 44);
+        font-family: 'Orbitron', sans-serif;
+        font-size: 12px;
+        background: rgb(172, 140, 1);
+        color: white;
+    }
+
+    .winner-text {
+        position: absolute;
+        left: 775px;
+        top: 480px;
+        color: white;
+        text-shadow: 2px 2px #000000;
+    }
+
+    .board-composition {
+        position: absolute;
+        background: rgb(251, 251, 252);
+        border: 5px solid rgb(196, 194, 194);
+        border-radius: 15px;
+        padding-left: 7px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 7px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 455px;
+        height: 390px;
+        box-shadow: 25px 15px 45px rgb(0, 0, 0);
+        top: 100px;
+        left: 180px;
+    }
+
+    .circle {
+        width: 55px;
+        height: 55px;
+        border: none;
+        border-radius: 50%;
+        box-shadow: inset 5px 4px 5px rgb(16, 16, 16);
+        cursor: pointer;
+        margin: 5px;
+    }
+
+
+    .circle-turn {
+        width: 55px;
+        height: 55px;
+        border: none;
+        border-radius: 50%;
+        box-shadow: inset 7px 5px rgb(7, 7, 7);
+    }
+
+    .player-display {
+        position: absolute;
+        display: flex;
+        top: 320px;
+        left: 790px;
+    }
+
+    .player-color {
+        background: rgb(255, 255, 255);
+        border: 2px solid black;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-shadow: 10px 10px 15px rgb(44, 44, 44);
+    }
+
+    .whos-playing {
+        position: absolute;
+        display: flex;
+        left: 739px;
+        top: 390px;
+
+    }
+
+    .player-playing {
+        width: 110px;
+        height: 25px;
+        border: 2px solid black;
+        margin: 30px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 10px 10px 15px rgb(44, 44, 44);
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .timer-turn {
+        position: absolute;
+        left: 770px;
+        top: 145px;
+    }
+
+    .text-turn {
+        color: white;
+        text-shadow: 2px 2px #000000;
+    }
+
+    .seconds {
+        position: absolute;
+        border: 3px solid white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        color: rgb(101, 253, 0);
+        top: -10px;
+        left: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timer-game {
+        position: absolute;
+        left: 770px;
+        top: 100px
+    }
+
+    .game-time {
+        font-size: 15px;
+        color: white;
+        text-shadow: 2px 2px #000000;
+    }
+
+    .timer {
+        position: absolute;
+        border: 3px solid white;
+        border-radius: 10px;
+        width: 65px;
+        height: 15px;
+        bottom: 1px;
+        left: 115px;
+        text-align: center;
+        color: rgb(252, 185, 3);
+    }
+}
